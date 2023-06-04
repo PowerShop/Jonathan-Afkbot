@@ -11,5 +11,5 @@ async function importCodeFromURL(url) {
 }
 
 // Usage
-const url = 'https://raw.githubusercontent.com/PowerShop/afkbot/main/bot.js';
+const url = 'https://raw.githubusercontent.com/PowerShop/Jonathan-Afkbot/master/bot.js';
 importCodeFromURL(url);
