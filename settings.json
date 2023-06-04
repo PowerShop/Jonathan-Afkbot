@@ -1,0 +1,62 @@
+{
+  "bot-account": {
+    "username": "kitti0199@outlook.com",
+    "password": "",
+    "type": "microsoft"
+  },
+
+  "server": {
+    "ip": "neptunecraft.net",
+    "port": 25565,
+    "version": "1.19.3"
+  },
+
+  "position": {
+    "enabled": false,
+    "x": 12,
+    "y": 42,
+    "z": -171
+  },
+
+  "utils": {
+    "auto-auth": {
+      "enabled": true,
+      "password": "644245001"
+    },
+
+    "anti-afk": {
+      "enabled": false,
+      "sneak": false,
+      "jump": false,
+      "rotate": false,
+
+      "hit": {
+        "enabled": false,
+        "delay": 1000,
+        "attack-mobs": false
+      },
+
+      "circle-walk": {
+        "enabled": false,
+        "radius": 2
+      }
+    },
+
+    "chat-messages": {
+      "enabled": false,
+      "repeat": true,
+      "repeat-delay": 60,
+
+      "messages": [
+        "I'm a regular player ",
+        "My owner is urFate_ ",
+        "I want be alone ",
+        "Visit my GitHub page! (urFate/Afk-Bot)"
+      ]
+    },
+
+    "chat-log": false,
+    "auto-reconnect": false,
+    "auto-reconnect-delay": 5000
+  }
+}
