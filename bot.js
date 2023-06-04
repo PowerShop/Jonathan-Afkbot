@@ -111,10 +111,12 @@ function createBot() {
 
             // Select slot
             if (input.startsWith('!slot')) {
-                const args = input.split(' ');
-                if (args.length === 2) {
+                const slotargu = input.split(' ');
+                if (slotargu.length === 2) {
                     const slot = parseFloat(args[1]);
                     bot.setQuickBarSlot(slot);
+                    // Log
+                    logger.info(`Selected slot ${slot}`);
                 }
             }
 
