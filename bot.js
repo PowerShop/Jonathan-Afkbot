@@ -117,6 +117,8 @@ function createBot() {
                     bot.setQuickBarSlot(slot);
                     // Log
                     logger.info(`Selected slot ${slot}`);
+                    // check item in hand
+                    logger.info(`Item in hand: ${bot.heldItem}`);
                 }
             }
 
