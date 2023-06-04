@@ -15,8 +15,6 @@ const rl = readline.createInterface({
 });
 let bot;
 
-
-
 function createBot() {
     const bot = mineflayer.createBot({
         username: config['bot-account']['username'],
@@ -74,18 +72,13 @@ function createBot() {
 
             // Add more commands as needed
             // right click when empty hand
-            if (input === '!rightclick') {
+            if (input === '!join') {
                 bot.activateEntity(bot.nearestEntity(e => e.type === 'player'));
             }
 
             // check current position
             if (input === '!pos') {
                 logger.info(`Current position: ${bot.entity.position}`);
-            }
-
-            // check current yaw
-            if (input === '!yaw') {
-                logger.info(`Current yaw: ${bot.entity.yaw}`);
             }
 
             // Shift one time
@@ -117,7 +110,7 @@ function createBot() {
             }
 
             // Select slot
-            if (input === '!slot') {
+            if (input.startsWith('!slot')) {
                 const args = input.split(' ');
                 if (args.length === 2) {
                     const slot = parseFloat(args[1]);
