@@ -222,16 +222,16 @@ function createBot() {
         }
     });
 
-    bot.on('chat', (username, message) => {
-        logger.info(`<${username}> ${message}`);
-    });
+    // bot.on('chat', (username, message) => {
+    //     logger.info(`<${username}> ${message}`);
+    // });
 
 
 
-    // Log everything in server
-    bot.on('message', (message) => {
-        logger.info(message.toAnsi());
-    });
+    // // Log everything in server
+    // bot.on('message', (message) => {
+    //     logger.info(message.toAnsi());
+    // });
 
     bot.on('goal_reached', () => {
         if (config.position.enabled) {
@@ -266,9 +266,9 @@ function createBot() {
     }
     );
 
-    bot.on('error', (err) =>
-        logger.error(`${err.message}`)
-    );
+    // bot.on('error', (err) =>
+    //     logger.error(`${err.message}`)
+    // );
 
 
 
