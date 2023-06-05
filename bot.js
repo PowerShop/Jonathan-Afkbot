@@ -3,7 +3,7 @@ const Movements = require('mineflayer-pathfinder').Movements;
 const pathfinder = require('mineflayer-pathfinder').pathfinder;
 const { GoalBlock, GoalXZ } = require('mineflayer-pathfinder').goals;
 const readline = require('readline');
-const fs = require('fs');
+
 const config = require('./settings.json');
 
 const loggers = require('./logging.js');
